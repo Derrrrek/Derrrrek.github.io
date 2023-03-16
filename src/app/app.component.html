@@ -1,15 +1,14 @@
-<div class="header"> 
-<h1>Strømpriser i Oslo / Øst-Norge</h1>
+<div class="header">
+  <h2>Strømpriser i Oslo / Øst-Norge</h2>
 </div>
 
-<div *ngIf="strompriser">
-  
+<div *ngIf="strompriser" class="content">
   <mat-form-field>
-    <input matInput [matDatepicker]="datepicker" placeholder="Choose a date" [(ngModel)]="selectedDate">
-    <mat-datepicker-toggle  matSuffix [for]="datepicker"></mat-datepicker-toggle>
+    <input class="test" matInput [matDatepicker]="datepicker" placeholder="Choose a date" [(ngModel)]="selectedDate">
+    <mat-datepicker-toggle class="test2" matSuffix [for]="datepicker"></mat-datepicker-toggle>
     <mat-datepicker #datepicker></mat-datepicker>
   </mat-form-field>
-  <button mat-raised-button color="primary" (click)="getStrompriser()">Hent pris</button>
+  <button class="button-31" mat-raised-button color="primary" (click)="getStrompriser()">Hent pris</button>
   <table>
     <thead>
       <tr>
@@ -23,6 +22,5 @@
         <td>{{ pris.NOK_per_kWh }}</td>
       </tr>
     </tbody>
-    <!-- ... -->
   </table>
 </div>
