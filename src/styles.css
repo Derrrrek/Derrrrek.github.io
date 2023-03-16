@@ -1,16 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; margin:0px}
 
 
 html {
-    background-color: #08415C;
+    background-color: #2D2727;
+}
+
+.Overskrift {
+    text-align: center;
+    color:#EEE5E9;
+}
+
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
 }
 
 html, body, header {
     margin: 0;
     padding: 0;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #08415C;
+    display: flex; /* Add display: flex */
+    flex-wrap: nowrap; /* Add flex-wrap: nowrap to prevent stacking */
+  }
+  
+  li {
+    flex: 1; /* Replace flex-grow: 1 with flex: 1 to evenly distribute the space */
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #413543;
+    width: 100%; /* Add width: 100% */
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  div {
+    text-align: center;
+  }
+ 
 
 
